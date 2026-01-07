@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohd Abdullah | Front-end Developer</title>
+    <meta name="description"
+        content="The portfolio of Mohd Abdullah, a passionate front-end developer creating exceptional digital experiences.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Boxicons for Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Your CSS File -->
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+
+<body>
+
+    <!-- ==================== HEADER / NAVBAR ==================== -->
+    <!-- ==================== RESPONSIVE HEADER ==================== -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <!-- Logo -->
+            <a href="#" class="nav__logo">
+                <SS />
+            </a>
+
+            <!-- Navigation Menu (This will be the slide-down panel on mobile) -->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="#about" class="nav__link">About</a></li>
+                    <li><a href="#work" class="nav__link">Work</a></li>
+                    <li><a href="#testimonials" class="nav__link">Testimonials</a></li>
+                    <li><a href="#contact" class="nav__link">Contact</a></li>
+                    <!-- <li><a href="#cv" class="nav__link"> Download CV </a></li> -->
+                </ul>
+
+                <!-- Close Button (Visible inside the mobile menu) -->
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+            </div>
+
+            <!-- Action Buttons: Theme toggle, CV Download, and Hamburger Toggle -->
+            <div class="nav__buttons">
+                <!-- Theme toggle button -->
+                <i class='bx bx-moon theme-toggle' id="theme-toggle"></i>
+
+                <!-- CV button (We'll hide this on mobile with CSS) -->
+                <!-- <a href="#" class="button button--primary nav__button-desktop">Download CV</a> -->
+
+                <!-- Hamburger menu toggle button (Visible only on mobile) -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ==================== HERO SECTION ==================== -->
+        <section class="hero container">
+            <div class="hero__content">
+                <h1 class="hero__title">Hi, I’m Mohd Abdullah 👋</h1>
+                <p class="hero__description">
+                    I’m a front-end developer with 1 year of experience building responsive and user-friendly web
+                    interfaces using HTML, CSS, JavaScript, and Bootstrap. I also have a basic understanding of React.js
+                    for creating dynamic components. I’m passionate about crafting clean, accessible, and visually
+                    appealing designs that work seamlessly across devices. Even with a year in the field, I continue to
+                    approach every project with curiosity and excitement.
+                </p>
+                <div class="hero__info">
+                    <div class="hero__info-item">
+                        <i class='bx bx-map'></i>
+                        <span>Lucknow, India</span>
+                    </div>
+                    <div class="hero__info-item">
+                        <div class="status-indicator"></div>
+                        <span>Available for new projects</span>
+                    </div>
+                </div>
+                <div class="hero__socials">
+                    <a href="https://github.com/mohdabdullah112" aria-label="GitHub">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mohd-abdullah-oct003/" aria-label="LinkedIn">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+                    <!-- <a href="#" aria-label="Figma"><i class='bx bxl-figma'></i></a> -->
+                </div>
+            </div>
+            <div class="hero__image-wrapper">
+                <img src="./image/my.png"   class="hero__image">
+            </div>
+        </section>
+
+        <!-- ==================== ABOUT SECTION ==================== -->
+        <section id="about" class="about-section">
+            <div class="container about__container">
+                <div class="section__tag">About</div>
+                <div class="about__content">
+                    <div class="about__image-wrapper">
+                        <img src="./image/my.png" alt="Mohd Abdullah standing"
+                            class="about__image">
+                    </div>
+                    <div class="about__text">
+                        <h2>Curious about me? Here you have it:</h2>
+                        <p>Hi, I’m Mohd Abdullah — a passionate front-end developer and BCA student with 1 year of
+                            hands-on experience. I specialize in creating clean, responsive, and user-friendly web
+                            interfaces using HTML, CSS, JavaScript, Bootstrap, and basic React.js.</p>
+                        <p>I began my web development journey in 2022, starting with core technologies like HTML, CSS,
+                            JavaScript, and basic React.js. Since then, I’ve steadily grown as a front-end developer —
+                            building responsive, accessible, and visually engaging websites.
+
+                            With a strong foundation in front-end basics and an eagerness to learn, I’m continuously
+                            exploring new tools and frameworks to improve my skills and build real-world projects. My
+                            goal is to craft clean, maintainable code and intuitive user experiences.
+
+                            I’m currently focused on strengthening my React.js capabilities and gradually expanding into
+                            modern technologies like Tailwind CSS, Git, and component-based UI development.</p>
+                        <p>Finally, some quick bits about me.</p>
+                        <ul class="about__list">
+                            <li>BCA in Computer Science</li>
+                            <li>1 year of practical experience</li>
+                            <li>Always to learn and grow </li>
+                            <li>Open to freelance and Job</li>
+                        </ul>
+                        <p>One last thing, I'm available for freelance work, so feel free to reach out and say hello! I
+                            promise I don't bite 😉</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SKILLS SECTION ==================== -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section__tag">Skills</div>
+                <h2 class="section__title">The skills, tools and technologies I am really good at:</h2>
+                <div class="skills__grid">
+                    <!-- Add your skills here -->
+
+                    <div class="skill__item"><img src="./image/html.png" alt="TypeScript"><span>HTML</span></div>
+                    <div class="skill__item"><img src="./image/css.png" alt="Next.js"><span>CSS</span></div>
+
+                    <div class="skill__item"><img src="./image/javascript.png" alt="JavaScript"><span>JavaScript</span>
+                    </div>
+
+                    <div class="skill__item"><img src="./image/bootstrap.png" alt="Node.js"><span>Bootstrap</span></div>
+                    <div class="skill__item"><img src="./image/react.js.png" alt="React"><span>React.JS</span></div>
+
+
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== EXPERIENCE SECTION ==================== -->
+        <section id="experience" class="experience-section">
+            <div class="container">
+                <div class="section__tag">Experience</div>
+                <h2 class="section__title">Here is a quick summary of my most recent experiences:</h2>
+                <div class="experience__list">
+                    <div class="experience__item">
+                        <div class="experience__logo">
+                            <img src="./image/e-profit.jpg" alt="Upwork">
+                        </div>
+                        <div class="experience__details">
+                            <h3 class="experience__title">Front-end Developer</h3>
+                            <ul>
+                                <li>Worked under senior developers to sharpen front-end development skills.</li>
+                                <li>Developed and styled professional email templates.</li>
+                                <li>Contributed to A+ content creation for enhanced user experience.</li>
+                                <li>Cloned websites and created interactive pages for internal projects.</li>
+                                <li>Helped in creating website Home Page, Spot Page, and Link Page for two different
+                                    websites.</li>
+                                <li>Helping to creating home page of health insurance1.</li>
+                            </ul>
+                        </div>
+                        <div class="experience__date">March-2024 - September-2024</div>
+                    </div>
+                    <!-- Repeat for other experiences -->
+                    <div class="experience__item">
+                        <div class="experience__logo">
+                            <img src="./image/intrainz.jpg" alt="Upwork">
+                        </div>
+                        <div class="experience__details">
+                            <h3 class="experience__title">Front-end Developer</h3>
+                            <ul>
+                                <li>Collaborated on user interface design execution using HTML, CSS, and JavaScript.
+                                </li>
+                                <li>Developed responsive, well-structured web pages and key front-end components.</li>
+                                <li>Assisted in maintaining navigation systems and forms for seamless functionality.
+                                </li>
+                                <li>participated in code reviews and team sessions to enhance technical skills and
+                                    industry knowledge.</li>
+                            </ul>
+                        </div>
+                        <div class="experience__date">September-2023 - Jan-2024</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== WORK/PROJECTS SECTION ==================== -->
+        <section id="work" class="work-section">
+            <div class="container">
+                <div class="section__tag">Work</div>
+                <h2 class="section__title">Some of the noteworthy projects I have built:</h2>
+                <div class="work__grid">
+                    <!-- Project 1 -->
+
+                    <div class="work__card">
+                        <div class="work__image-wrapper">
+                            <a href="https://mohdabdullah112.github.io/Tailwind-main/">
+
+                                <img src="./image/link1.png" alt="Fiskil Project">
+                            </a>
+                        </div>
+                        <div class="work__content">
+                            <h3>Energico</h3>
+                            <p>A clean and responsive garden care service website designed with a modern green theme.
+                                The website features a top contact bar, smooth navigation,
+                                and a visually appealing hero section that highlights gardening services.</p>
+                            <div class="work__tags">
+                                <span>Html</span><span>Tailwindcss</span> <span>javascript</span>
+                            </div>
+                            <a href="https://mohdabdullah112.github.io/Tailwind-main/" class="work__link"><i
+                                    class='bx bx-link-external'></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 (reversed) -->
+
+                    <div class="work__card work__card--reversed">
+                        <div class="work__image-wrapper">
+                            <a href="https://tripquick-luxury-travel-planner-mai.vercel.app">
+                                <img src="./image/link2.png" alt="Project 2">
+                            </a>
+                        </div>
+                        <div class="work__content">
+                            <h3>Trip Quick</h3>
+                            <p>Designed and developed a luxury travel-planning web application enabling users to create
+                                personalized itineraries with curated destinations, premium stays, and activity
+                                suggestions. Focused on delivering a smooth, intuitive, and high-end user experience.
+                            </p>
+                            <div class="work__tags">
+                                <span>React</span><span>TailwindCss</span><span>TypeScript</span>
+                            </div>
+                            <a href="https://tripquick-luxury-travel-planner-mai.vercel.app" class="work__link"><i
+                                    class='bx bx-link-external'></i></a>
+                        </div>
+                    </div>
+
+
+
+
+                    <!-- project 3 -->
+
+                    <div class="work__card">
+                        <div class="work__image-wrapper">
+                            <a href="https://www.myrestaurantinsurance.co.uk/">
+
+                                <img src="./image/link3.png" alt="Fiskil Project">
+                            </a>
+                        </div>
+                        <div class="work__content">
+                            <h3>My Restaurant Insurance</h3>
+                            <p>My Restaurant Insurance is a specialized, professional service platform designed to
+                                provide tailored insurance solutions for the UK hospitality sector. Built using a robust
+                                combination of HTML5, CSS3, and JavaScript, the website serves as a high-conversion lead
+                                generation tool for business owners seeking coverage for restaurants, takeaways, and
+                                cafes.</p>
+                            <div class="work__tags">
+                                <span>Html5</span><span>css3</span> <span>javascript</span>
+                            </div>
+                            <a href="https://www.myrestaurantinsurance.co.uk/" class="work__link"><i
+                                    class='bx bx-link-external'></i></a>
+                        </div>
+                    </div>
+
+
+
+                    <!-- project 4 -->
+
+                    <div class="work__card work__card--reversed">
+                        <div class="work__image-wrapper">
+                            <a href="https://www.nurasleep.co.uk/">
+                                <img src="./image/link4.png" alt="Project 2">
+                            </a>
+                        </div>
+                        <div class="work__content">
+                            <h3>Nura Sleep</h3>
+                            <p>Nura Sleep is a professionally developed e-commerce landing page and product site for a
+                                premium UK-based mattress brand. The project is built using a clean, modern tech stack
+                                of HTML5, CSS3, and JavaScript, focusing on high conversion rates, performance, and a
+                                luxurious user experience tailored for the sleep and wellness industry.
+                            </p>
+                            <div class="work__tags">
+                                <span>Html5</span><span>Css3</span><span>JavaScript</span>
+                            </div>
+                            <a href="https://www.nurasleep.co.uk/" class="work__link"><i
+                                    class='bx bx-link-external'></i></a>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== TESTIMONIALS SECTION ==================== -->
+        <section id="testimonials" class="testimonials-section">
+            <div class="container">
+                <div class="section__tag">Testimonials</div>
+                <h2 class="section__title">Nice things people have said about me:</h2>
+                <div class="testimonials__grid">
+                    <div class="testimonial__card">
+                        <img src="./image/" alt="John Doe" class="testimonial__avatar">
+                        <p>"Job well done! I am really impressed. He is very very good at what he does. I would
+                            recommend Sagar and will hire him again in the future."</p>
+                        <div class="testimonial__author">
+                            <h4>John Doe</h4>
+                            <span>Founder - xyz.com</span>
+                        </div>
+                    </div>
+                    <div class="testimonial__card">
+                        <img src="./image/" alt="Jane Smith" class="testimonial__avatar">
+                        <p>"Great guy, highly recommended for any COMPLEX front-end development job! His skills are
+                            top-notch and he will be an amazing addition to any team."</p>
+                        <div class="testimonial__author">
+                            <h4>Jane Smith</h4>
+                            <span>Product Manager</span>
+                        </div>
+                    </div>
+                    <div class="testimonial__card">
+                        <img src="./image/" alt="Sam Wilson" class="testimonial__avatar">
+                        <p>"Sagar was a real pleasure to work with and we look forward to working with him again. He's a
+                            disciplined and hard-working person."</p>
+                        <div class="testimonial__author">
+                            <h4>Sam Wilson</h4>
+                            <span>Freelancer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== CONTACT SECTION ==================== -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section__tag">Get in touch</div>
+                <h2 class="section__title">What’s next? Feel free to reach out to me if you're looking for a developer,
+                    have a query, or simply want to connect.</h2>
+                <div class="contact__info">
+                    <div class="contact__item">
+                        <i class='bx bxl-gmail'></i>
+                        <span id="email-text">abdullahoct08@gmail.com</span>
+                        <button class="copy-btn" data-copy="email-text" aria-label="Copy Email"><i
+                                class='bx bx-copy'></i></button>
+                    </div>
+                    <div class="contact__item">
+                        <i class='bx bxs-phone-call'></i>
+                        <span id="phone-text">+91 8707763145</span>
+                        <button class="copy-btn" data-copy="phone-text" aria-label="Copy Phone"><i
+                                class='bx bx-copy'></i></button>
+                    </div>
+                </div>
+                <div class="contact__socials">
+                    <p>You may also find me on these platforms:</p>
+                    <div class="hero__socials">
+                        <a href="https://github.com/mohdabdullah112" aria-label="GitHub">
+                            <i class='bx bxl-github'></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/mohd-abdullah-oct003/" aria-label="LinkedIn">
+                            <i class='bx bxl-linkedin'></i>
+                        </a>
+                        <!-- <a href="#" aria-label="Figma"><i class='bx bxl-figma'></i></a>
+                    </div> -->
+                    </div>
+                </div>
+        </section>
+
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 | Designed and coded with ❤️️ by Mohd Abdullah</p>
+        </div>
+    </footer>
+
+    <!-- Your JavaScript File -->
+    <script src="portfolio.js"></script>
+</body>
+
+</html>
